@@ -1,0 +1,298 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Velvet Pages Publishing — Stories That Stir the Soul. Discover unforgettable stories and independent books.">
+  <title>Velvet Pages Publishing | Stories That Stir the Soul</title>
+  <style>
+    :root {
+      --burgundy: #650d2b;
+      --deep: #160b10;
+      --gold: #d6b36a;
+      --cream: #fff8ef;
+      --muted: #d8c7cb;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      background: var(--deep);
+      color: var(--cream);
+      font-family: Georgia, 'Times New Roman', serif;
+      line-height: 1.7;
+    }
+
+    header {
+      text-align: center;
+      padding: 42px 20px 30px;
+      background: linear-gradient(135deg, #260914, #650d2b, #180910);
+      border-bottom: 1px solid var(--gold);
+    }
+
+    .brand {
+      color: var(--gold);
+      font-size: clamp(2rem, 6vw, 3.4rem);
+      margin: 0;
+      letter-spacing: 2px;
+    }
+
+    .tagline {
+      margin: 8px 0 0;
+      color: var(--cream);
+      font-style: italic;
+      letter-spacing: 2px;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 12px 26px;
+      padding: 16px;
+      background: #10070b;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      border-bottom: 1px solid #593044;
+    }
+
+    nav a {
+      color: var(--gold);
+      text-decoration: none;
+      font-size: 0.95rem;
+    }
+
+    nav a:hover { color: white; }
+
+    .hero {
+      text-align: center;
+      padding: 90px 22px;
+      background:
+        radial-gradient(ellipse at center, #65132e 0%, #2a0b18 48%, #160b10 78%);
+    }
+
+    .hero h2 {
+      font-size: clamp(2rem, 6vw, 3.6rem);
+      color: var(--gold);
+      line-height: 1.2;
+      max-width: 850px;
+      margin: 0 auto 18px;
+    }
+
+    .hero p {
+      max-width: 650px;
+      margin: 0 auto 28px;
+      color: var(--muted);
+      font-size: 1.1rem;
+    }
+
+    .button {
+      display: inline-block;
+      background: var(--gold);
+      color: #1b0d12;
+      padding: 12px 25px;
+      border-radius: 3px;
+      text-decoration: none;
+      font-weight: bold;
+      margin: 5px;
+    }
+
+    .button:hover { background: white; }
+
+    section {
+      max-width: 1100px;
+      margin: auto;
+      padding: 65px 22px;
+    }
+
+    .section-title {
+      text-align: center;
+      color: var(--gold);
+      font-size: 2.2rem;
+      margin: 0 0 12px;
+    }
+
+    .intro {
+      text-align: center;
+      color: var(--muted);
+      max-width: 700px;
+      margin: 0 auto 35px;
+    }
+
+    .book-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 24px;
+      margin-top: 35px;
+    }
+
+    .book {
+      background: #25121a;
+      border: 1px solid #79513e;
+      padding: 28px 22px;
+      text-align: center;
+      border-radius: 5px;
+    }
+
+    .book-cover {
+      min-height: 285px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      padding: 20px;
+      margin-bottom: 20px;
+      background: linear-gradient(145deg, #86143b, #260914 75%);
+      border: 2px solid var(--gold);
+      box-shadow: 0 10px 25px #0008;
+    }
+
+    .book-cover span {
+      color: var(--gold);
+      font-size: 0.85rem;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+    }
+
+    .book-cover strong {
+      color: white;
+      font-size: 1.8rem;
+      line-height: 1.25;
+      margin: 20px 0;
+    }
+
+    .book h3 { color: var(--gold); }
+    .book p { color: var(--muted); }
+
+    .about {
+      background: #241019;
+      border-top: 1px solid #68404e;
+      border-bottom: 1px solid #68404e;
+      max-width: none;
+    }
+
+    .about-inner {
+      max-width: 850px;
+      margin: auto;
+    }
+
+    .contact { text-align: center; }
+    .contact a { color: var(--gold); }
+
+    footer {
+      text-align: center;
+      padding: 28px 18px;
+      background: #0c0609;
+      color: var(--muted);
+      border-top: 1px solid var(--gold);
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 600px) {
+      nav { gap: 10px 16px; }
+      .hero { padding: 65px 18px; }
+      section { padding: 48px 18px; }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1 class="brand">Velvet Pages Publishing</h1>
+    <p class="tagline">Stories That Stir the Soul</p>
+  </header>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#books">Bookshop</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <main>
+    <div class="hero" id="home">
+      <h2>Every Story Deserves to Be Felt.</h2>
+      <p>
+        Welcome to Velvet Pages Publishing, where powerful voices,
+        unforgettable characters, and stories that touch the heart
+        come together.
+      </p>
+      <a class="button" href="#books">Explore the Bookshop</a>
+    </div>
+
+    <section id="books">
+      <h2 class="section-title">The Bookshop</h2>
+      <p class="intro">
+        Discover stories filled with emotion, courage, love, and
+        unforgettable journeys. Explore our featured title.
+      </p>
+
+      <div class="book-grid">
+        <article class="book">
+          <div class="book-cover">
+            <span>Velvet Pages Publishing</span>
+            <strong>The Life and Trials of a Lesbian</strong>
+            <span>A Story of Life, Love & Resilience</span>
+          </div>
+          <h3>The Life and Trials of a Lesbian</h3>
+          <p>
+            A deeply personal journey through love, identity,
+            challenges, and the courage to live authentically.
+          </p>
+          <p><em>Book details and purchasing information coming soon.</em></p>
+        </article>
+
+        <article class="book">
+          <div class="book-cover">
+            <span>Coming Soon</span>
+            <strong>Your Next Story</strong>
+            <span>Velvet Pages Publishing</span>
+          </div>
+          <h3>More Stories Are Coming</h3>
+          <p>
+            New titles and unforgettable stories will be added
+            to our collection.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="about-inner">
+        <h2 class="section-title">About Velvet Pages</h2>
+        <p class="intro">
+          Velvet Pages Publishing was created for readers who want
+          more than just words on a page. We believe stories can
+          inspire, challenge, comfort, and connect us.
+        </p>
+        <p class="intro">
+          Our mission is to share meaningful stories that celebrate
+          the human experience and leave a lasting impression.
+        </p>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <h2 class="section-title">Get in Touch</h2>
+      <p class="intro">
+        Have a question about our books or publishing? We'd love
+        to hear from you.
+      </p>
+      <p>
+        Email:
+        <a href="mailto:CONTACT-EMAIL-HERE">CONTACT-EMAIL-HERE</a>
+      </p>
+      <p><em>Replace CONTACT-EMAIL-HERE with your business email address.</em></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Velvet Pages Publishing. All rights reserved.</p>
+    <p>Stories That Stir the Soul.</p>
+  </footer>
+</body>
+</html>
